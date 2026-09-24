@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> Seleksi beasiswa sekolah</h2>
+    <script>
+        
+        let rata_rata_nilai = parseInt(prompt("Masukkan Rata-rata Nilai:"));
+        let Penghasilan = parseInt(prompt("Masukkan Penghasilan Orang Tua:"));
+
+        document.write("Rata-rata Nilai: " + rata_rata_nilai + "<br>");
+        document.write("Penghasilan Orang Tua: " + Penghasilan + "<br><hr>");
+
+        if (rata_rata_nilai >= 88 && Penghasilan <= 2500000) {
+            document.write("<br><b>Selamat, Anda Lulus Seleksi Beasiswa Sekolah!</b><br>");
+        }else {
+            document.write("<br>Maaf, Anda Tidak Lulus Seleksi Beasiswa Sekolah.<BR>");
+        }
+
+        for (let i = 1; i <= 35; i++) { document.write("=");}
+        document.write("<br><b>  TERIMA KASIH TELAH MENGISI FORM SELEKSI BEASISWA SEKOLAH </b><br>");
+    </script>
+</body>
+</html>
